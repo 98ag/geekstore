@@ -13,10 +13,5 @@
 }
 
 .productos__texto--link{
-    color: #2A7AE4;
     font-size: 1.3rem;
-}
-
-.productos__texto--link:link, .productos__texto--link:visited{
-    text-decoration: none;
 }

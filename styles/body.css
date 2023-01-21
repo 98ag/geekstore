@@ -1,3 +1,16 @@
 body{
     font-family: 'Raleway', sans-serif;
+    color: #464646;
+}
+
+a{
+    color: #2A7AE4;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+main{
+    display:block;
 }

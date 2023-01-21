@@ -1,5 +1,6 @@
 .header{
-    height: 100px;
+    height: auto;
+    width: 100vw;
     display: inline-block;
 }
 
@@ -10,21 +11,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 30px;
+    margin: 15px auto;
 }
 
 .logo{
-    width: 30vw;
+    width: 35vw;
 }
 
 .boton__login{
-    width: 37vw;
-    height: 65px;
+    width: 30vw;
+    padding: .7rem 0;
     color: #2A7AE4;
     border: 2px solid #2A7AE4;
     background: white;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .boton__buscar{
@@ -32,7 +33,6 @@
     border: none;
     background: white;
     font-size: 35px;
-    color: #464646;
 }
 
 

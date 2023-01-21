@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.footer-texto{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: .66rem 0;
+}

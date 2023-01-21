@@ -1,16 +1,16 @@
 .productos__grid{
     width: 90vw;
     margin: .5rem 5vw;
-    height: 700px;
     display: grid;
+    gap: 4vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: .6rem;
 }
 
 .productos__grid--item{
     display: flex;
     flex-direction: column;
+    width: calc(86vw / 2);
 }
 
 .productos__grid--item:nth-child(1){
@@ -31,4 +31,21 @@
 .productos__grid--item:nth-child(4){
     grid-column: 2;
     grid-row: 2;
+}
+
+.grid__nombre, .grid__precio, .grid__link{
+    font-size: 1.45rem;
+    margin-top: .8rem;
+}
+
+.grid__nombre{
+    font-weight: 500;
+}
+
+.grid__precio{
+    font-weight: 700;
+}
+
+.grid__link{
+    font-weight: 400;
 }
