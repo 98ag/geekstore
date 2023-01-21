@@ -1,0 +1,22 @@
+.productos__texto{
+    width: 90vw;
+    margin: 1.5rem 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 700;
+}
+
+.productos__texto--titulo{
+    color: #464646;
+    font-size: 2rem;
+}
+
+.productos__texto--link{
+    color: #2A7AE4;
+    font-size: 1.3rem;
+}
+
+.productos__texto--link:link, .productos__texto--link:visited{
+    text-decoration: none;
+}
