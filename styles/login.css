@@ -1,0 +1,47 @@
+.login{
+    background-color: #f5f5f5;
+}
+
+.login__items{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.item{
+    margin: 1rem;
+    font-size: 1.66rem;
+}
+
+.login__titulo{
+    font-weight: 600;
+}
+
+.login__usuario, .login__contrasena{
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 0 2px 2px lightgrey;
+    padding: .5rem;
+    font-size: 1.3rem;
+    width: 80%;
+    outline: none;
+}
+
+.login__boton{
+    width: 30vw;
+    padding: .7rem 0;
+    color: white;
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    border-radius: 3px;
+    font-size: 1.33rem;
+    font-weight: 500;
+}
+
+.login__boton:hover{
+    color: #2A7AE4;
+    background-color: white;
+}

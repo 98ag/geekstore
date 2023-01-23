@@ -3,9 +3,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GeekStore</title>
+    <script src="https://kit.fontawesome.com/1fe494dee2.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/body.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/contacto.css">
+    <link rel="stylesheet" href="/styles/footer.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__items">
+            <a href="/index.html" class="header__index"><img src="/assets/Logo.svg" alt="Logo" class="logo"></a>
+            <button class="boton__buscar"><i class="fa fa-search"></i></button>
+        </div>        
+    </header>
+
+    <section class="login">
+        <div class="login__items">
+            <p class="login__titulo item">Iniciar Sesion</p>
+            <input type="email" class="login__usuario item" placeholder="Correo electronico">
+            <input type="password" class="login__contrasena item" placeholder="Contraseña">
+            <button class="login__boton item">Entrar</button>
+        </div>        
+    </section>
+
+    <section class="contacto">
+        <div class="contacto__items">
+            <img src="/assets/Logo.svg" alt="Logo" class="contacto__logo">
+            <a href="#" class="contacto__link">Quienes somos</a>
+            <a href="#" class="contacto__link">Politica de privacidad</a>
+            <a href="#" class="contacto__link">Programa de fidelidad</a>
+            <a href="#" class="contacto__link">Nuestras tiendas</a>
+            <a href="#" class="contacto__link">Quiero abrir una franquicia</a>
+            <a href="#" class="contacto__link">Anuncie aqui</a>
+            <form class="contacto__formulario">
+                <p class="contacto__titulo">Contactese con nosotros</p>
+                <div class="contacto__formulario--container">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="contacto__formulario--container">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="7"></textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="contacto__formulario--boton">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-texto">Desarrollado por Agustin Garcia</p>
+        <p class="footer-texto">2022</p>
+    </footer>
 </body>
 </html>

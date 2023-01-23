@@ -68,7 +68,12 @@ label{
     background-color: #2A7AE4;
     color: white;
     border-radius: .33rem;
-    border: none;
+    border: 1px solid #2A7AE4;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.contacto__formulario--boton:hover{
+    background-color: white;
+    color: #2A7AE4;
 }

@@ -4,6 +4,10 @@
     display: inline-block;
 }
 
+.header__index:hover{
+    border-bottom: 2px solid #2A7AE4;
+}
+
 .header__items{
     height: 70px;
     width: 90vw;
@@ -26,6 +30,11 @@
     background: white;
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+.boton__login:hover{
+    color: white;
+    background: #2A7AE4;
 }
 
 .boton__buscar{

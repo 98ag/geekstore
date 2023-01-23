@@ -37,7 +37,12 @@
     width: 35vw;
     height: 60px;
     background-color: #2A7AE4;
-    border: none;
+    border: 1px solid #2A7AE4;
     border-radius: .2rem;
     font-size: 1.2rem;
+}
+
+.boton__banner:hover{
+    background-color: white;
+    color: #2A7AE4;
 }
