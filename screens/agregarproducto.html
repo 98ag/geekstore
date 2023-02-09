@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekStore</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/body.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../styles/agregarproducto.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__items">
+            <a href="../index.html" class="header__index"><img src="../assets/Logo.svg" alt="Logo" class="logo"></a>
+            <button class="boton__buscar"><i class="fa fa-search"></i></button>
+        </div>        
+    </header>
+
+    <section class="agregar">
+        <div class="agregar-container">
+            <h1 class="agregar__titulo">Agregar nuevo producto</h1>
+            <form action="#" class="agregar__formulario contacto__formulario" data-form>
+                <div class="contacto__formulario--container">
+                    <label for="url">URL de la imagen</label>
+                    <input 
+                        type="text" 
+                        name="url" 
+                        id="url" 
+                        class="form-text" 
+                        data-url
+                        required>
+                </div>
+                
+                <div class="contacto__formulario--container">
+                    <label for="categoria">Categoria</label>
+                    <input 
+                        type="text" 
+                        name="categoria" 
+                        id="categoria" 
+                        class="form-text" 
+                        data-categoria
+                        required>
+                </div>
+
+                <div class="contacto__formulario--container">
+                    <label for="nombreProducto">Nombre del producto</label>
+                    <input 
+                        type="text" 
+                        name="nombreProducto" 
+                        id="nombreProducto" 
+                        class="form-text" 
+                        data-nombreproducto
+                        required>
+                </div>
+
+                <div class="contacto__formulario--container">
+                    <label for="precio">Precio</label>
+                    <input 
+                        type="text" 
+                        name="precio" 
+                        id="precio" 
+                        class="form-text" 
+                        data-precio
+                        required>
+                </div>
+
+                <div class="contacto__formulario--container">
+                    <label for="descripcion">Descripcion del producto</label>                
+                    <textarea 
+                        name="descripcion" 
+                        id="descripcion" 
+                        cols="30" 
+                        rows="10" 
+                        class="form-text" 
+                        data-descripcion
+                        required></textarea>
+                </div>
+
+                <input type="submit" value="Agregar Producto" class="contacto__formulario--boton">
+            </form>
+        </div>
+    </section>
+
+    <section class="contacto">
+        <div class="contacto__items">
+            <img src="../assets/Logo.svg" alt="Logo" class="contacto__logo">
+            <a href="#" class="contacto__link">Quienes somos</a>
+            <a href="#" class="contacto__link">Politica de privacidad</a>
+            <a href="#" class="contacto__link">Programa de fidelidad</a>
+            <a href="#" class="contacto__link">Nuestras tiendas</a>
+            <a href="#" class="contacto__link">Quiero abrir una franquicia</a>
+            <a href="#" class="contacto__link">Anuncie aqui</a>
+            <form class="contacto__formulario">
+                <p class="contacto__titulo">Contactese con nosotros</p>
+                <div class="contacto__formulario--container">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="contacto__formulario--container">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="7"></textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="contacto__formulario--boton">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-texto">Desarrollado por Agustin Garcia</p>
+        <p class="footer-texto">2022</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../controllers/productos-controller.js"></script>
+</body>
+</html>
