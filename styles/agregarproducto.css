@@ -28,5 +28,7 @@
     border: none;
 }
 
-
-
+.formulario-botones{
+    display: flex;
+    justify-content: space-between;
+}

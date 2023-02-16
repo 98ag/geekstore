@@ -20,8 +20,27 @@ const eliminarProducto = (id) => {
     });
 }
 
+const fetchProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`)
+        .then(res => res.json());
+}
+
+const actualizarProducto = (url, categoria, nombre, precio, descripcion, id) => {
+    return fetch(`http://localhost:3000/productos/${id}`, 
+    {
+        method: "PUT",
+        headers: {
+            "Content-Type" : "application/json"
+        },
+        body: JSON.stringify({url, categoria, nombre, precio, descripcion})
+    })
+        .catch(er => console.log(er));
+}
+
 export const productoServices = {
     listaProductos,
     crearProducto,
-    eliminarProducto
+    eliminarProducto,
+    fetchProducto,
+    actualizarProducto
 };
